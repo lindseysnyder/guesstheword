@@ -1,0 +1,15 @@
+body {
+  background-color: lavenderblush;
+}
+
+label, input, button {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.vis-none {
+  visibility: hidden;
+}

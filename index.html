@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the word</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Guess the word</h1>
+  <div data-gamestart>
+    <div>
+      <p>Welcome to Guess the Word!</p>
+      <p>This is a two player game. One person enters a word or phrase to guess, and the other enters guesses.</p>
+      <p>The word or phrase may contain any characters, including punctuation. Only numbers and letters will be obscured and must be guessed.</p>
+      <p>Click the button to begin</p>
+    </div>
+    <button type="button" data-gamestart-button>Start game</button>
+  </div>
+  <div class="none" data-gameplay>
+    <div data-start-play>
+      <label for="word">Enter a word or phrase</label>
+      <input type="text" data-entered-word>
+      <button type="button" data-play-button>Play</button>
+    </div>
+    <button type="button" data-backtostart-button>Back to start</button>
+    <button type="button" data-new-game-button class="none">New game</button>
+    <div class="none" data-word-wrapper>
+      <h2>word in play:</h2>
+      <p data-word-container></p>
+    </div>
+    <div class="none" data-guess-wrapper>
+      <h2>enter a guess:</h2>
+      <label for="guess">Enter a guess</label>
+      <input type="text" data-guess>
+      <p class="message guess message vis-none">You may guess one letter at a time</p>
+      <button type="button" data-guess-button>Guess</button>
+    </div>
+    <div class="none" data-status-wrapper>
+      <h2>status:</h2>
+      <p data-status-container></p>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
